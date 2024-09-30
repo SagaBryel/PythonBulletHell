@@ -4,12 +4,83 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3ec1f56-3560-435d-aec6-53d7af99ab64" name="Changes" comment="First Commit&#10;Map defined">
+    <list default="true" id="f3ec1f56-3560-435d-aec6-53d7af99ab64" name="Changes" comment="Second Commit&#10;Camera and player animations">
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/aura/pngwing.com.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown2/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown2/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown2/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown2/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown2/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackdown2/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright2/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright2/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright2/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright2/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright2/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackright2/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup2/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup2/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup2/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup2/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup2/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/attackup2/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/walkingright/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/walkingright/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/walkingright/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/walkingright/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/walkingright/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/walkingright/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/walkingup/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/walkingup/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/walkingup/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/Caso seja possivel aprimorar a movimentação à tempo/walkingup/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk2/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk2/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk2/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk2/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk2/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/atk2/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/walking/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/walking/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/walking/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/walking/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/walking/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameSrc/images/player/walking/5.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameSrc/audio/music.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameSrc/audio/shoot.wav" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GameSrc/code/collidersprytes.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameSrc/code/collidersprytes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameSrc/code/groups.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameSrc/code/groups.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameSrc/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameSrc/code/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameSrc/code/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameSrc/code/player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameSrc/images/player/down/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameSrc/code/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/GameSrc/code/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameSrc/data/maps/mapa.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/GameSrc/data/maps/mapa.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameSrc/images/gun/bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameSrc/images/gun/gun.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +118,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.groups.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.player.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.collidersprytes.executor": "Run",
+    "Python.groups.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.player.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -88,11 +160,20 @@
       <option name="project" value="LOCAL" />
       <updated>1726833879201</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Second Commit&#10;Camera and player animations">
+      <option name="closed" value="true" />
+      <created>1727663308485</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727663308485</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit&#10;Map defined" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit&#10;Map defined" />
+    <MESSAGE value="Second Commit&#10;Camera and player animations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit&#10;Camera and player animations" />
   </component>
 </project>

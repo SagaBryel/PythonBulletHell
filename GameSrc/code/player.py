@@ -23,9 +23,9 @@ class Player(pygame.sprite.Sprite):
         self.is_attacking = False
         self.attack_time = 0
         self.attack_button_pressed = False
-        self.attack_cooldown = 0.5
+        self.attack_cooldown = 600
         self.combo_timer = 0
-        self.combo_max_time = 0.3
+        self.combo_max_time = 400
         self.combo = False
 
     def load_images(self):

@@ -23,3 +23,4 @@ class AllSprites(pygame.sprite.Group):
             # Logica de superposição/sobreposição
             for sprite in sorted(layer, key = lambda sprite: sprite.rect.centery):
                 self.display_surface.blit(sprite.image, sprite.rect.topleft + self.offset)
+

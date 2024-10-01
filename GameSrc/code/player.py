@@ -12,6 +12,13 @@ class Player(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect(center=pos)
         self.hitbox_rect = self.rect.inflate(-100, -85)
+        self.attack_damage = 2
+        self.health = PLAYER_HEALTH
+
+        #Ivulnerable
+        self.invulnerable = False
+        self.invulnerable_time = 750  # Tempo de invulnerabilidade em milissegundos
+        self.last_hit_time = 0  # Tempo da última vez que o jogador foi atingido
 
         # movement
         self.direction = pygame.Vector2()
@@ -25,8 +32,14 @@ class Player(pygame.sprite.Sprite):
         self.attack_button_pressed = False
         self.attack_cooldown = 600
         self.combo_timer = 0
-        self.combo_max_time = 400
+        self.combo_max_time = 500
         self.combo = False
+
+        # micro level sistem for test
+        self.level = 0  # Nível inicial
+        self.enemies_defeated = 0  # Contador de inimigos derrotados
+        self.has_bow = False  # Indica se o jogador tem o arco
+        self.has_energy_sphere = False  # Indica se o jogador tem a esfera de energia
 
     def load_images(self):
         self.frames = {'atk': [], 'atk2': [], 'stand': [], 'walking': []}
@@ -69,11 +82,28 @@ class Player(pygame.sprite.Sprite):
             self.frame_index = 0
             self.attack_time = current_time
 
+            # Dano do primeiro ataque
+            self.current_attack_damage = self.attack_damage  # Dano normal
+
+            # Criação da hitbox do primeiro ataque
+            if self.last_direction.x > 0:  # Se o player estiver virado para a direita
+                self.attack_hitbox = pygame.Rect(self.rect.right, self.rect.top, 50, self.rect.height)
+            else:  # Se o player estiver virado para a esquerda
+                self.attack_hitbox = pygame.Rect(self.rect.left - 50, self.rect.top, 50, self.rect.height)
+
         elif self.is_attacking and self.state == 'atk':
             # Verifica se o tempo do combo ainda é válido
-            if (current_time - self.attack_time) <= self.combo_max_time * 1000:
+            if (current_time - self.attack_time) <= self.combo_max_time:
                 if self.attack_button_pressed:  # Se o botão foi pressionado novamente
                     self.combo = True
+                    self.current_attack_damage = self.attack_damage * 2  # Dano do combo
+
+        # Criação da hitbox para o ataque combo (atk2)
+        if self.combo and self.state == 'atk2':
+            if self.last_direction.x > 0:  # Se o player estiver virado para a direita
+                self.attack_hitbox = pygame.Rect(self.rect.right, self.rect.top, 50, self.rect.height)
+            else:  # Se o player estiver virado para a esquerda
+                self.attack_hitbox = pygame.Rect(self.rect.left - 50, self.rect.top, 50, self.rect.height)
 
     def move(self, dt):
         if not self.is_attacking:
@@ -136,3 +166,19 @@ class Player(pygame.sprite.Sprite):
         self.move(dt)
         self.animate(dt)
         self.check_attack_end()
+
+        current_time = pygame.time.get_ticks()
+
+        # Verifica se está invulnerável e atualiza o estado
+        if self.invulnerable:
+            '''if (current_time // 100) % 2 == 0:  # Pisca a cada 100 ms
+                self.image.set_alpha(128)  # Torna o jogador semi-transparente
+            else:
+                self.image.set_alpha(255)  # Torna o jogador totalmente visível'''
+
+            # Verifica se o tempo de invulnerabilidade acabou
+            if current_time - self.last_hit_time > self.invulnerable_time:
+                self.invulnerable = False  # Remove invulnerabilidade
+                #self.image.set_alpha(255)  # Garante que o jogador esteja totalmente visível
+
+
